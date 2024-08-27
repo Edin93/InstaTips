@@ -7,6 +7,7 @@ from api.database import database
 
 # from api.logging_conf import configure_logging
 from api.routers.post import router as post_router
+from api.routers.user import router as user_router
 
 logger = logging.getLogger(__name__)
 
@@ -23,3 +24,4 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 app.include_router(post_router)
+app.include_router(user_router)
