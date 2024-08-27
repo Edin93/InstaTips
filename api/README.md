@@ -1,4 +1,5 @@
-## InstaTips
+# InstaTips
+
 
 #### Setup a virtual python environment
 * Must have pyenv installed and know how to use it, check this [tutorial](https://blog.teclado.com/how-to-use-pyenv-manage-python-versions/)
@@ -30,4 +31,9 @@ pip install -r requirements.txt
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "charliermarsh.ruff"
 }
+```
+#### Launch the application
+* After activating the python virtual environment to work on the projet, you can launch the application using this command:
+```
+uvicorn api.main:app --reload
 ```
